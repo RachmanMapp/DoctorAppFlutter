@@ -1,21 +1,4 @@
-<<<<<<< HEAD
 # doctorapp
 
-A new Flutter project.
+CSC 179 class project. Will update later.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# DoctorAppFlutter
-CSC 179 project
->>>>>>> de0c00dc96e557ec43e35ca308a15bc1256c8f0d
