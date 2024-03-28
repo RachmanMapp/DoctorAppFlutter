@@ -16,6 +16,8 @@ dependencies:
   get: ^4.6.5
   focus_detector: ^2.0.1
   date_picker_timeline: ^1.2.5
+  firebase_core: ^2.27.2 
+  cloud_firestore: ^4.15.10
 
 
 dev_dependencies:

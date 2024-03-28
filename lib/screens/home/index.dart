@@ -3,17 +3,18 @@ import 'package:doctorapp/helper/routeHelper.dart';
 import 'package:doctorapp/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:doctorapp/screens/patientInfo/index.dart';
 
 class Home extends StatelessWidget {
   Home({super.key});
 
   List category = [
-    {"name": "Consult9ation", "color": Colors.red.withOpacity(0.5)},
-    {"name": "Dental", "color": Colors.blue.withOpacity(0.5)},
-    {"name": "Heart", "color": Colors.green.withOpacity(0.5)},
-    {"name": "Hospitales", "color": Colors.purple.withOpacity(0.5)},
-    {"name": "Medicals", "color": Colors.amber.withOpacity(0.5)},
-    {"name": "Physics", "color": Colors.teal.withOpacity(0.5)},
+    {"name": "General Patient Information", "color": Colors.red.withOpacity(0.5)},
+    {"name": "Health Conditions", "color": Colors.blue.withOpacity(0.5)},
+    {"name": "Medications", "color": Colors.green.withOpacity(0.5)},
+    {"name": "Analysis", "color": Colors.purple.withOpacity(0.5)},
+    {"name": "Lab Reports", "color": Colors.amber.withOpacity(0.5)},
+    {"name": "Upcoming Appointments", "color": Colors.teal.withOpacity(0.5)},
     {"name": "Skin", "color": Colors.lightGreenAccent.withOpacity(0.5)},
     {"name": "Surgeon", "color": Colors.blue.withOpacity(0.5)},
   ];
@@ -141,7 +142,7 @@ class Home extends StatelessWidget {
                           fontWeight: FontWeight.w600),
                     ),
                     Text(
-                      ' Your Doctor',
+                      ' Your Patient',
                       style: TextStyle(
                           color: Colors.black.withOpacity(0.3),
                           fontSize: 30,
@@ -282,6 +283,25 @@ class Home extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'Book Now',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Get.to(GeneralPatientInformationScreen());
+                },
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 15),
+                  width: Get.width,
+                  height: Get.height * 0.06,
+                  decoration: BoxDecoration(
+                      color: ColorssA.primaryColor,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Center(
+                    child: Text(
+                      'Patient Info',
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
